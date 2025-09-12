@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvaraj A - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3); /* 🌹 Rose gradient */
+    }
+    }
+    header p {
+      margin: 5px 0 15px;
+      font-size: 1.2rem;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #ffbfd4;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    h2 {
+      color: #ffbfd4;
+      text-shadow: 0 0 10px #ff4081;
+      border-bottom: 2px solid #ff4081;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill {
+      background: rgba(255, 64, 129, 0.8); /* rose pink */
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-shadow: 0 0 5px black;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff4081;
+    }
+
+    .project-card {
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      margin: 15px auto;
+      border-left: 4px solid #ff4081;
+      border-radius: 6px;
+      transition: box-shadow 0.3s;
+      width: 80%;
+      text-align: left;
+      color: #fff;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 20px #ff4081;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 8px 12px;
+      padding: 10px 18px;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .contact-links a.email { background: #0078d4; }
+    .contact-links a.call { background: #00c3ff; }
+    .contact-links a.whatsapp { background: #25D366; }
+    .contact-links a.github { background: #333; }
+
+    .contact-links a:hover {
+      box-shadow: 0 0 15px #ff4081;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+
+  <header>
+    <div class="container">
+      <h1>Yuvaraj A</h1>
+      <p>B.Sc. Computer Science Student | Aspiring Software Developer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      👋 Hello! I am <b>Yuvaraj A</b>, a B.Sc. Computer Science student.<br>
+      Passionate about <b>web development</b> and <b>programming</b>.<br>
+      My goal is to become a software developer and build real-world projects.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio with animations built using HTML, CSS, and JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Student Management System</h3>
+      <p>A Java mini project to manage student data with search and sort features.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <p>🎓 B.Sc. Computer Science (Ongoing)</p>
+    <p>🎓 Higher Secondary - Computer Science</p>
+    <p>✅ SSLC Completed</p>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages" class="container">
+    <h2>Languages</h2>
+    <p>🌐 Tamil — Fluent</p>
+    <p>🌐 English — Basic</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a class="email" href="mailto:yuvarajsanjay32@gmail.com">✉️ Email</a>
+      <a class="call" href="tel:+918870126517">📞 Call</a>
+      <a class="whatsapp" href="https://wa.me/918870126517" target="_blank">💬 WhatsApp</a>
+      <a class="github" href="https://github.com/YOURUSERNAME" target="_blank">🌐 GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Yuvaraj A
+  </footer>
+
+  <script>
+    // Rose Matrix Rain Effect
+    const canvas = document.getElementById("matrix");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+    }
+    resizeCanvas();
+
+    const letters = "🌹YUVARAJDEV"; // Rose themed
+    const fontSize = 16;
+    let columns = canvas.width / fontSize;
+
+    const drops = [];
+    for (let x = 0; x < columns; x++) drops[x] = 1;
+
+    function draw() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "#ff4081"; // rose pink
+      ctx.font = fontSize + "px monospace";
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = letters[Math.floor(Math.random() * letters.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setInterval(draw, 33);
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      columns = canvas.width / fontSize;
+      for (let x = 0; x < columns; x++) drops[x] = 1;
+    });
+  </script>
+</body>
+</html>
